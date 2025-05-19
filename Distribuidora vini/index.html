@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>distribuidora vini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Controle de estoque - distribuidora vini</h1>
+
+
+    <!-- Formulário  para adicionar os produtos -->
+
+    <form id="form-produto">
+        <input type="text" id="nome" placeholder="Nome do Produto" required>
+        <input type="number" id="quantidade" placeholder="Quantidade" required>
+        <input type="text" id="unidade" placeholder="Unidade (ex: litros,ml)" required>
+        <input type="text" id="categoria" placeholder="Categoria (ex:coca,vodka )" required>
+        <button type="submit">Adicionar produto</button>
+    </form>
+    <!-- Campo de busca -->
+    <input type="text" id="busca" placeholder="Buscar produto...">
+
+    <!-- Tabela para exibir os produtos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Unidade</th>
+                <th>categoria</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-produtos">
+        <!-- Produtos serão inseridos aqui via Javascript -->
+        </tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
